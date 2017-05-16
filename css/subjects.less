@@ -1,0 +1,388 @@
+//////////////////////////    	   Colors  		  //////////////////////////
+@base-fon: #252831;
+@base-blue: #1997c7;
+@base-green: #1bc98e;
+@base-yellow: #e4d836;
+@base-purple: #9f86fe;
+@base-red: #e44959;
+@base-grey: #989ba2;
+@base-white: #fff;
+@dark-grey: #424856;
+@base-text: #a2a5ae;
+@yellow: #ffc107;
+@dark-blue: #14375a;
+@grey: #666;
+@base-gr: #ecf0f5;
+///////////////////////////////////
+body{
+	box-sizing: border-box;
+	background-color: @base-fon;
+	color: @base-text;
+	overflow-y: scroll;
+}
+input, button{
+	outline: none;
+	&:hover, &:visited, &:focus, &:active{
+		outline: none;
+	}
+}
+textarea{
+	outline: none;
+	&:hover, &:visited, &:focus, &:active{
+		outline: none;
+	}
+}
+a{
+	text-decoration: none;
+	&:hover, &:visited{
+		text-decoration: none;
+	}	
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header{
+	width: 100%;
+	height: 80px;
+	background-color: @base-blue;
+	color: @base-fon;
+}
+.main-header{
+	&-logo{
+		img{
+			margin-top: 2%; 
+		}
+	}
+	&-title{
+		h2{
+			margin-top: 3%;
+		} 
+	}
+}
+////////////////////////    Section main    /////////////////////////////
+.main{
+	&-dashboard{
+		h3{
+			font-size: 20px;
+			font-style: italic;
+		}
+	}
+}
+.main-menu{
+	width: 100%;
+}
+i{
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.menu a{
+	background: transparent;
+	color: @base-white;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid @grey;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	&:hover{
+		background: @base-blue;
+		padding: 10px 0 10px 20px;
+		i{
+			-webkit-transform: scale(1.5, 1.5);
+			-ms-transform: scale(1.5, 1.5);
+			-o-transform: scale(1.5, 1.5);
+			transform: scale(1.5, 1.5);
+		}
+	}
+}  
+.menu-list{
+	position: relative;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.exit-btn{
+	border: none;
+	height: 30px;
+	width: 100%;
+	border: 2px solid @base-red;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	background-color: transparent;
+	color: @base-red;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	&:hover{
+		background-color: @base-red;
+		color: @base-fon;
+		font-weight: bold;
+	}
+}
+select{
+	display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    height: 35px;
+	width: 250px;
+	padding-left: 1%;
+	background-color: transparent;
+	border: none;
+	border: 2px solid @base-blue;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.subject{
+	&-item{
+		background-color: transparent;
+		border: none;
+		border: 2px solid @base-blue;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		&:hover{
+			-webkit-box-shadow: 0 0 120px 25px @base-yellow;
+			box-shadow: 0 0 120px 25px @base-yellow;
+		}
+	}
+	&-btn{
+		margin-left: 25%;
+		border: none;
+		border: 2px solid @base-green;
+		background-color: transparent;
+		height: 35px;
+		width: 200px;
+		color: @base-green;
+		font-weight: bold;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		&:hover{
+			background-color: @base-green;
+			color: @base-fon;
+			-webkit-box-shadow: 0 0 120px 25px @base-green;
+			box-shadow: 0 0 120px 25px @base-green;
+		}
+	}
+	&-nav{
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+}
+.subject-content-title{
+	margin-top: 14px;
+	padding-left: 2%;
+	border-bottom: 2px solid @base-text;
+}
+		.task-button-add{
+			width: 250px;
+			height:40px;
+			border: none;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+			border-radius: 10px;
+			background-color: transparent;
+			font-weight: bold;
+			border: 2px solid @base-green;
+			color: @base-green;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			&:hover{
+				background-color: @base-green;
+				color: @base-fon;
+			}
+		}
+		.task-button-change{
+			margin-left: 10%;
+			width: 250px;
+			height:40px;
+			border: none;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+			border-radius: 10px;
+			background-color: transparent;
+			font-weight: bold;
+			border: 2px solid @base-yellow;
+			color: @base-yellow;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			&:hover{
+				background-color: @base-yellow;
+				color: @base-fon;
+			}
+		}
+		.task-button-del{
+			margin-left: 9%;
+			width: 250px;
+			height: 40px;
+			border: none;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+			border-radius: 10px;
+			background-color: transparent;
+			font-weight: bold;
+			border: 2px solid @base-red;
+			color: @base-red;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			&:hover{
+				background-color: @base-red;
+				color: @base-fon;
+			}
+		}
+
+.table-hover>tbody>tr:hover {
+	background-color: @base-blue;
+	color: @base-fon;
+}
+.progress{
+	width: 20px;
+	background-color: transparent;
+	input{
+		outline: none;
+		border: none;
+		height: 48px;
+		border: 1px solid;
+		width: 100%;
+		background-color: transparent;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		text-align: center;
+		&:focus, &:hover{
+			-webkit-box-shadow: 0 0 10px 10px @base-red;
+				box-shadow: 0 0 10px 10px @base-red;
+				border-color: @base-red;
+		}
+	}
+	&-table-head{
+		background-color: @base-gr;
+		color: @base-fon;
+	}
+}
+.modal-content{
+	background-color: @base-fon;
+}
+#modal-add .modal-body input{
+	width: 70%;
+	margin-top: 3%;
+	padding-left: 2%;
+	height: 40px;
+	background-color: transparent;
+	border: 2px solid @base-blue;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	&:focus{
+		-webkit-box-shadow: 0 0 120px 25px @base-blue;
+				box-shadow: 0 0 120px 25px @base-blue;
+	}
+}
+#modal-add .modal-body textarea{
+	margin-top: 3%;
+	width:70%;
+	padding-left: 2%;
+	background-color: transparent;
+	border: 2px solid @base-blue;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	&:focus, &:visited{
+		outline: none;
+	}
+	&:focus{
+		-webkit-box-shadow: 0 0 120px 25px @base-blue;
+				box-shadow: 0 0 120px 25px @base-blue;
+	}
+}
+.addTask-btn{
+	margin-top: 10%;
+	height: 40px;
+	width: 50%;
+	border: none;
+	border: 2px solid @base-blue;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	color: @base-blue;
+	font-weight: bold;
+	background-color: transparent;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	&:hover{
+		background-color: @base-blue;
+		color: @base-fon;
+		-webkit-box-shadow: 0 0 120px 25px @base-blue;
+				box-shadow: 0 0 120px 25px @base-blue;
+	}
+}
+.close-x{
+	color: @base-white;
+	&:hover{
+		color: @base-white;
+	}
+}
+
+.confirm-btn{
+	border: none;
+	background-color: transparent;
+	color: @base-green;
+	font-weight: bold;
+
+}
+.delete-btn{
+	border: none;
+	background-color: transparent;
+	color: @base-red;
+	font-weight: bold;
+}
+.changeTask-btn{
+	border: none;
+	background-color: transparent;
+	font-weight: bold;
+	color: @base-yellow;
+	font-size: 20px;
+}
+.task-text, .task-name{
+	width: 100%;
+	height: 100%;
+	min-height: 50px;
+	border: none;
+	margin-bottom: -5px;
+	background-color: transparent;
+	padding: 5px;
+	resize: none;
+}
+.table>tbody>tr>td, .table>tbody>tr>th{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
